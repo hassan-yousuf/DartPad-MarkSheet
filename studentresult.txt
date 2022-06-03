@@ -1,0 +1,36 @@
+void main() { 
+void StudentExamsResult() {
+String studentFirstName = 'Muhammad Hassan';
+String studentLastName = 'Yousuf';
+int islamiatMarks = 57;
+int sindhiMarks = 74;
+int mathMarks = 69;
+int urduMarks = 81;
+int englishMarks = 46;
+int chemistryMarks = 92;
+int biologyMarks = 85;
+int physicsMarks = 68;
+int pakistanstudiesMarks = 95;
+int obtainedMarks = (islamiatMarks + sindhiMarks + mathMarks + urduMarks + englishMarks + chemistryMarks + biologyMarks + physicsMarks + pakistanstudiesMarks);
+int totalMarks = 900;
+num percentage = (obtainedMarks / totalMarks * 100);
+  if(percentage <= 100 && percentage >= 80) {
+    print('First Name: ${studentFirstName}\nLast Name: ${studentLastName}\nGrade: A+\nPercentage: ${percentage}%\nStatus: Passed');
+  }else if(percentage <= 90 && percentage >= 70) {
+    print('First Name: ${studentFirstName}\nLast Name: ${studentLastName}\nGrade: A\nPercentage: ${percentage}%\nStatus: Passed');
+  }else if(percentage <= 80 && percentage >= 60) {
+    print('First Name: ${studentFirstName}\nLast Name: ${studentLastName}\nGrade: B\nPercentage: ${percentage}%\nStatus: Passed');
+  }else if(percentage <= 70 && percentage >= 50) {
+    print('First Name: ${studentFirstName}\nLast Name: ${studentLastName}\nGrade: C\nPercentage: ${percentage}%\nStatus: Passed');
+  }else if(percentage <= 60 && percentage >= 40) {
+    print('First Name: ${studentFirstName}\nLast Name: ${studentLastName}\nGrade: D\nPercentage: ${percentage}%\nStatus: Passed');
+  }else if(percentage <= 50 && percentage >= 30) {
+    print('First Name: ${studentFirstName}\nLast Name: ${studentLastName}\nGrade: E\nPercentage: ${percentage}%\nStatus: Passed');
+  }else if(percentage <= 40 && percentage >= 20) {
+    print('First Name: ${studentFirstName}\nLast Name: ${studentLastName}\nGrade: F\nPercentage: ${percentage}%\nStatus: Failed');
+  }else{
+    print('You didn\'t wrote correct Marks!');
+  }      
+}
+StudentExamsResult();  
+}
